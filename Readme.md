@@ -3,7 +3,7 @@
 
 An easy to use Interactive Graph Path visualizer with batteries included to implement your own Algorithm Visualization.
 
-### Try (use Safari or Chorme or Firefox): [Here](https://raj457036.github.io/Path-Finding-Visualizer)
+
 
 <img src="src/assets/Screenshot (1).png" align="center" style="max-width: 60%">
 
@@ -30,13 +30,6 @@ _Use Latest Chrome/ Chromium Browsers/ Safari (mobile/ Tablets/ Desktop)_
   - [Depth First Search](https://en.wikipedia.org/wiki/Depth-first_search)
   - [Breadth First Search](https://en.wikipedia.org/wiki/Breadth-first_search)
 - [Dijkstra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra's_algorithm)
-- [A\* Search Algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm)
-  - [Manhattan Heuristic](http://theory.stanford.edu/~amitp/GameProgramming/Heuristics.html#diagonal-distance)
-  - [Euclidean Heuristic](http://theory.stanford.edu/~amitp/GameProgramming/Heuristics.html#euclidean-distance-squared)
-  - [Diagonal Heuristic](http://theory.stanford.edu/~amitp/GameProgramming/Heuristics.html#diagonal-distance)
-    - [Chebyshev distance](http://en.wikipedia.org/wiki/Chebyshev_distance)
-    - [Octile distance](https://www.sciencedirect.com/science/article/pii/S1000936116301182)
-- [Best First Search](https://en.wikipedia.org/wiki/Best-first_search) (Next Update)
 
 ### Implemented Maze Algorithms
 

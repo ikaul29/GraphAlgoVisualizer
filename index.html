@@ -16,8 +16,8 @@
       name="keywords"
       content="Path, Visualizer, Pathfinding, PathFinder, Algorithm, graph, GraphAlgorithm,"
     />
-    <meta name="author" content="Raj Singh" />
-    <link rel="shortcut icon" href="src/assets/logo.png" type="image/x-icon" />
+    <meta name="author" content="Ishaan Kaul && Kapil Sharma" />
+    <link rel="shortcut icon" href="src/assets/WhatsApp Image 2021-03-30 at 12.52.38 (1).jpeg" type="image/x-icon" />
 
     <!-- font awasome -->
     <link
@@ -34,7 +34,7 @@
     />
     <link rel="stylesheet" href="src/style/css/main.css" />
 
-    <title>AlogViz - An easy to use Interactive Graph Path visualizer</title>
+    <title>GraphAlgoVisualizer - An easy to use Interactive Graph Path visualizer</title>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165471746-1"></script>
 <script>
@@ -47,11 +47,11 @@
 
 </head>
 
-  <body>
+  <body style="background-color: #decfcf;color: #3577b9">
     <section id="home">
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-0 sticky-top">
         <a class="navbar-brand d-flex text-white">
-          PathViz &nbsp;
+          GraphAlgoVisualizer &nbsp;
           <div class="d-none action-panel d-lg-none ">
             <button class="btn btn-warning btn-sm start-stop-btn">
               Visualize
@@ -87,31 +87,14 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <i class="fa fa-th-large"></i> Create Blocks
+                <i class="fa fa-th-large"></i> Create Random Grid
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item disabled" onclick="RandomGrid()"
                   >Random Grid</a
                 >
-                <div class="dropdown-divider"></div>
-                <h6 class="dropdown-header">Upcoming Updates</h6>
-                <!-- <a class="dropdown-item disabled" href="#"
-                  >DFS Maze Generation</a
-                > -->
-                <!-- <a class="dropdown-item disabled" href="#"
-                  >Recursive backtracker</a
-                > -->
-                <a class="dropdown-item disabled" href="#"
-                  >Randomized Prim's algorithm</a
-                >
-                <a class="dropdown-item disabled" href="#"
-                  >Randomized Kruskal's algorithm</a
-                >
-                <a class="dropdown-item disabled" href="#"
-                  >Recursive Division</a
-                >
 
-                <!-- <a class="dropdown-item" onclick="fillBlock('fill2')">Fill 2</a> -->
+              <!-- <a class="dropdown-item" onclick="fillBlock('fill2')">Fill 2</a> -->
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -125,7 +108,7 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <i class="fa fa-filter"></i> Algorithm
+                <i class="fa fa-filter"></i> Algorithms
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
@@ -150,99 +133,13 @@
                 </li>
                 <li>
                   <a class="dropdown-item algo-selection" data-algo="dijkstra"
-                    >Dijkstra's Algorithm (A* with h=0)</a
+                    >Dijkstra's Algorithm </a
                   >
                 </li>
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle"
-                    >A* Algorithms (ε =
-                    <span id="admissibleValueDisplay"></span> )</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a
-                        class="dropdown-item algo-selection"
-                        data-algo="astar"
-                        data-h="manhattan"
-                      >
-                        A* (using Manhattan Heuristic)
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item algo-selection"
-                        data-algo="astar"
-                        data-h="euclidean"
-                      >
-                        A* (using Euclidean Heuristic)
-                      </a>
-                    </li>
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item dropdown-toggle"
-                        >A* (using Diagonal Heuristic)</a
-                      >
-                      <ul class="dropdown-menu">
-                        <li>
-                          <a
-                            class="dropdown-item algo-selection"
-                            data-algo="astar"
-                            data-h="diagonal"
-                            data-d="1"
-                          >
-                            with Chebyshev distance (D = 1, D2 = 1)
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item algo-selection"
-                            data-algo="astar"
-                            data-h="diagonal"
-                            data-d="2"
-                          >
-                            with Octile distance (D = 1, D2 = sqrt(2))
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-
                 <!-- <a class="dropdown-item algo-selection" data-algo="unknown"
                   >Unknown Algorithm</a
                 > -->
-                <div class="dropdown-divider"></div>
-                <h6 class="dropdown-header">Upcoming Updates</h6>
-                <a class="dropdown-item disabled" href="#" data-algo="dfsMaze"
-                  >Best First Search</a
-                >
               </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                id="algo-choice"
-                role="button"
-                data-toggle="dropdown"
-                title="Change Speed"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <i class="fa fa-tachometer"></i> Speed
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item speed-selection" data-speed="Fast">
-                  Fast
-                </a>
-                <a class="dropdown-item speed-selection" data-speed="Medium">
-                  Medium
-                </a>
-                <a class="dropdown-item speed-selection" data-speed="Slow">
-                  Slow
-                </a>
-                <a class="dropdown-item speed-selection" data-speed="Step">
-                  Step Mode
-                </a>
-              </div>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -286,7 +183,7 @@
                   </div>
                 </div>
                 <!-- boxsize input -->
-                <div class="p-2">
+                <!-- <div class="p-2">
                   <div class="input-group input-group-sm">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="inputGroup-sizing-sm"
@@ -302,26 +199,7 @@
                       min="10"
                     />
                   </div>
-                </div>
-                <!-- ε-admissible input -->
-                <div class="p-2">
-                  <div
-                    class="input-group input-group-sm"
-                    data-toggle="tooltip"
-                    data-title="Used for weighted heuristic function hw = ε*ha(n)"
-                  >
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="">ε admissible</span>
-                    </div>
-                    <input
-                      type="number"
-                      class="form-control"
-                      id="admissible-value"
-                      value="5"
-                      min="1"
-                    />
-                  </div>
-                </div>
+                </div> -->
               </div>
             </li>
             <li class="nav-item d-lg-none">
@@ -332,7 +210,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="https://github.com/raj457036/Path-Finding-Visualizer/"
+                href="https://github.com/ikaul29/GraphAlgoVisualizer"
                 target="_blank"
               >
                 <i class="fa fa-github"></i> Github</a
@@ -437,7 +315,7 @@
             </div>
           </div>
         </section>
-        <section class="graph d-flex justify-content-center row" id="grid">
+        <section  class="graph d-flex justify-content-center row" id="grid">
           <canvas id="graph-canvas" resize></canvas>
         </section>
       </section>
